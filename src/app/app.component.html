@@ -1,0 +1,102 @@
+<div id="app">
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer mode="side" class="nav">
+      <a mat-fab extended routerLink="dashboard">
+        <mat-icon>people</mat-icon>
+        Alumnos
+      </a>
+      <br>
+      <a mat-fab extended routerLink="calc_cot">
+        <mat-icon>output</mat-icon>
+        Calculadora efectividad cotidiana
+      </a>
+      <br>
+      <a mat-fab extended routerLink="calc_efi">
+        <mat-icon>output</mat-icon>
+        Calculadora efectividad empresarial
+      </a>
+      <br>
+      <a mat-fab extended routerLink="calc_emp">
+        <mat-icon>output</mat-icon>
+        Calculadora efectividad eficiencia-eficacia
+      </a>
+      <br>
+      <a mat-fab extended routerLink="calc_rio">
+        <mat-icon>output</mat-icon>
+        Calculadora ROI
+      </a>
+      <br>
+      <a mat-fab extended routerLink="admin">
+        <mat-icon>grid_on</mat-icon>
+        Administración
+      </a>
+      <br>
+      <a mat-fab extended routerLink="admin_pro">
+        <mat-icon>grid_on</mat-icon>
+        Administración de proyectos
+      </a>
+      <br>
+      <a mat-fab extended routerLink="nego">
+        <mat-icon>grid_on</mat-icon>
+        Negociación
+      </a>
+      <br>
+      <a mat-fab extended routerLink="proc">
+        <mat-icon>grid_on</mat-icon>
+        Proceso administrativo
+      </a>
+      <br>
+      <a mat-fab extended routerLink="mani">
+        <mat-icon>grid_on</mat-icon>
+        Manipulación
+      </a>
+      <br>
+      <a mat-fab extended routerLink="efica">
+        <mat-icon>grid_on</mat-icon>
+        Eficacia
+      </a>
+      <br>
+      <a mat-fab extended routerLink="efici">
+        <mat-icon>grid_on</mat-icon>
+        Eficiencia
+      </a>
+      <br>
+      <a mat-fab extended routerLink="ries">
+        <mat-icon>grid_on</mat-icon>
+        Riesgos
+      </a>
+      <br>
+      <a mat-fab extended routerLink="respro">
+        <mat-icon>grid_on</mat-icon>
+        Riesgos en proyectos
+      </a>
+      <br>
+      <a mat-fab extended routerLink="mode">
+        <mat-icon>grid_on</mat-icon>
+        Modelo de creación
+      </a>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div class="example-sidenav-content">
+        <button type="button" mat-icon-button matTooltip="Basic" aria-label="Example icon-button with a heart icon"
+          (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <router-outlet></router-outlet>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
+<!-- <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened class="nav">
+        <a routerLink="dashboard">Inicio</a>
+        <br>
+        <a routerLink="form">Form</a>
+        <br>
+        <a routerLink="table">Table</a>
+        <br>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container> -->
